@@ -1,0 +1,6 @@
+# Ignore node_modules in all subdirectories
+client/node_modules/
+server/node_modules/
+
+# If you have other subfolders with node_modules, add them like so:
+# otherFolder/node_modules/
