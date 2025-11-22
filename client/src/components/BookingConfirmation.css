@@ -1,0 +1,191 @@
+.bc-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.bc-card {
+  border: none;
+  box-shadow: 0px 4px 16px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.bc-header {
+  background: #ecfdf5; /* emerald-50 */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+.bc-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.bc-icon-circle {
+  width: 64px;
+  height: 64px;
+  background: #10b981; /* emerald-500 */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bc-check-icon {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+
+.bc-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #065f46; /* emerald-800 */
+}
+
+.bc-subtext {
+  color: #059669; /* emerald-600 */
+  margin-top: 4px;
+}
+
+/* Content */
+.bc-content {
+  padding: 24px;
+}
+
+.bc-box {
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.bc-label {
+  font-size: 14px;
+  color: gray;
+}
+
+.bc-id {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Section */
+.bc-section {
+  margin-top: 20px;
+}
+
+.bc-section-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Details Grid */
+.bc-details-grid {
+  display: grid;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.bc-detail-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.bc-detail-icon {
+  width: 22px;
+  height: 22px;
+  color: #10b981;
+}
+
+.bc-detail-main {
+  font-weight: 500;
+}
+
+.bc-detail-sub {
+  font-size: 14px;
+  color: gray;
+}
+
+/* Payment rows */
+.bc-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.bc-total {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.bc-total-amount {
+  color: #059669;
+}
+
+/* Important Info */
+.bc-important {
+  background: #eff6ff;
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.bc-important h4 {
+  color: #1e40af;
+  margin-bottom: 8px;
+}
+
+.bc-important ul {
+  color: #1d4ed8;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Email notice */
+.bc-email-box {
+  background: #ecfdf5;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  color: #047857;
+  margin-top: 16px;
+}
+
+/* Buttons */
+.bc-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Customize Button */
+.bc-btn-outline {
+  flex: 1;
+  border: 2px solid #10b981;
+  color: #10b981;
+  background: white;
+}
+
+.bc-btn-outline:hover {
+  background: #ecfdf5;
+}
+
+.bc-btn-primary {
+  flex: 1;
+  background: #10b981 !important;
+  color: white !important;
+}
+
+.bc-btn-primary:hover {
+  background: #059669 !important;
+}
+
+.bc-btn-icon {
+  margin-right: 6px;
+}

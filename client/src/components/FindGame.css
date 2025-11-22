@@ -1,0 +1,226 @@
+/* PAGE */
+.findgame-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8f1ff, white, #e9ffe8);
+  padding-bottom: 40px;
+}
+
+/* HEADER */
+.findgame-header {
+  background: linear-gradient(90deg, #2563eb, #16a34a);
+  color: white;
+  padding: 120px 0 80px;
+}
+
+.findgame-header-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.findgame-back-btn {
+  color: white;
+}
+
+.findgame-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.findgame-title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.findgame-title-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* SEARCH */
+.findgame-search-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.findgame-search-row {
+  display: flex;
+  gap: 12px;
+}
+
+.findgame-search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.findgame-search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.6;
+}
+
+.findgame-search-input {
+  padding-left: 40px;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+}
+
+/* FILTERS */
+.findgame-filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.findgame-filters-panel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  padding: 16px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.findgame-filter-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.findgame-filter-label {
+  color: white;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.findgame-select {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.2);
+  color: white;
+}
+
+/* RESULTS */
+.findgame-result-count {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* CONTENT */
+.findgame-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 16px;
+  margin-top: -30px;
+}
+
+/* EMPTY STATE */
+.findgame-empty {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.findgame-empty-icon {
+  width: 70px;
+  height: 70px;
+  opacity: 0.4;
+}
+
+.findgame-empty-title {
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+/* CARDS */
+.findgame-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.findgame-card {
+  transition: box-shadow 0.2s ease;
+}
+
+.findgame-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.findgame-card-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.findgame-card-image img {
+  width: 260px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* DETAILS */
+.findgame-card-content {
+  padding: 24px;
+  flex: 1;
+}
+
+.findgame-card-title {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.findgame-badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.findgame-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.findgame-info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #555;
+}
+
+.findgame-host {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+
+.findgame-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+/* ACTIONS */
+.findgame-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.findgame-join-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

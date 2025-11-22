@@ -1,0 +1,272 @@
+.profile-page {
+  min-height: 100vh;
+  background: #f0f9ff;
+  padding-bottom: 40px;
+}
+
+/* HEADER */
+.profile-header {
+  background: linear-gradient(to right, #2563eb, #16a34a);
+  color: white;
+  padding: 90px 0 130px;
+}
+
+.profile-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.profile-back {
+  color: white !important;
+  margin-bottom: 20px;
+}
+
+/* HEADER TOP */
+.profile-header-top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .profile-header-top {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.profile-avatar {
+  width: 120px !important;
+  height: 120px !important;
+  border: 4px solid white;
+}
+
+/* NAME + CONTACT */
+.profile-header-info {
+  flex: 1;
+}
+
+.profile-name-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.profile-contact-row {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  opacity: 0.9;
+}
+
+.profile-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon-sm {
+  width: 18px;
+  height: 18px;
+}
+
+/* AVAILABILITY */
+.profile-availability-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.availability-badge {
+  background: #16a34a !important;
+  color: white;
+}
+
+/* MINI CARDS */
+.profile-mini-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mini-card-content {
+  text-align: center;
+}
+
+.mini-card-icon {
+  margin: auto;
+}
+
+.mini-card-content .flame {
+  color: orange;
+}
+
+.mini-card-content .yellow {
+  color: gold;
+}
+
+.mini-card-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.mini-card-label {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* MAIN */
+.profile-main {
+  margin-top: -80px;
+}
+
+/* STATS GRID */
+.profile-stats-grid {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .profile-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat-card {
+  background: white;
+}
+
+.stat-content {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-blue { background: #dbeafe; color: #2563eb; }
+.bg-green { background: #dcfce7; color: #16a34a; }
+.bg-purple { background: #efeaff; color: #7c3aed; }
+.bg-orange { background: #ffedd5; color: #ea580c; }
+
+.stat-label {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.stat-value {
+  font-size: 22px;
+}
+
+/* TABS */
+.profile-tabs-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.shadow-card {
+  background: white;
+  margin-top: 14px;
+}
+
+/* PERFORMANCE */
+.performance-section {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.performance-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.progress {
+  margin-top: 6px;
+}
+
+/* COLORS FOR RELIABILITY TAG */
+.reliability-green { background: #dcfce7 !important; color: #15803d !important; }
+.reliability-blue { background: #dbeafe !important; color: #2563eb !important; }
+.reliability-yellow { background: #fef9c3 !important; color: #ca8a04 !important; }
+.reliability-red { background: #fee2e2 !important; color: #dc2626 !important; }
+
+/* MATCH HISTORY */
+.match-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.match-item {
+  border: 1px solid #e5e7eb;
+  padding: 14px;
+  border-radius: 8px;
+  background: white;
+}
+
+.match-title {
+  font-weight: 600;
+}
+
+.match-date {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.match-sport {
+  background: #ecfdf5 !important;
+  color: #059669 !important;
+}
+
+/* BADGES */
+.badges-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .badges-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.badge-item {
+  text-align: center;
+  padding: 16px;
+  background: #faf5ff;
+  border: 1px solid #e9d5ff;
+  border-radius: 8px;
+}
+
+.badge-icon {
+  font-size: 32px;
+}
+
+.badge-empty {
+  text-align: center;
+  padding: 40px 0;
+  opacity: 0.6;
+}
+
+.gray {
+  color: #9ca3af;
+}

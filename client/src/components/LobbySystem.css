@@ -1,0 +1,567 @@
+/* ROOT PAGE */
+.lobby-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eff6ff, #ffffff, #ecfdf5);
+  padding-bottom: 80px;
+}
+
+/* HEADER */
+.lobby-header {
+  background: linear-gradient(90deg, #2563eb, #16a34a);
+  color: white;
+  padding-top: 96px;
+  padding-bottom: 64px;
+}
+
+.lobby-header-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.lobby-back-btn {
+  color: white !important;
+  margin-bottom: 24px;
+}
+
+/* Header layout */
+.lobby-header-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .lobby-header-main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.lobby-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lobby-header-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lobby-header-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.lobby-header-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.lobby-header-venue {
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 4px;
+}
+
+.lobby-header-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.lobby-header-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lobby-header-meta-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Header right side */
+.lobby-header-side {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .lobby-header-side {
+    align-items: flex-end;
+  }
+}
+
+/* Players joined card */
+.lobby-players-card {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  border-color: rgba(255,255,255,0.4) !important;
+  color: white;
+}
+
+.lobby-players-card-content {
+  padding: 12px 18px !important;
+  text-align: center;
+}
+
+.lobby-players-count {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.lobby-players-label {
+  font-size: 13px;
+}
+
+/* Public toggle */
+.lobby-public-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.lobby-public-toggle-label {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.lobby-public-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.lobby-public-status {
+  font-size: 13px;
+}
+
+/* MAIN LAYOUT */
+.lobby-main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
+  margin-top: -32px;
+}
+
+.lobby-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .lobby-grid {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  }
+}
+
+.lobby-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lobby-right-column {
+  position: relative;
+}
+
+/* CARDS GENERAL */
+.lobby-card {
+  overflow: hidden;
+}
+
+.lobby-card-content {
+  padding: 16px 20px 20px 20px !important;
+}
+
+/* Card title */
+.lobby-card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lobby-card-title-space {
+  justify-content: space-between;
+}
+
+.lobby-card-title-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lobby-card-title-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.lobby-icon-blue {
+  color: #2563eb;
+}
+
+.lobby-icon-orange {
+  color: #ea580c;
+}
+
+.lobby-icon-green {
+  color: #16a34a;
+}
+
+.lobby-icon-gray {
+  color: #4b5563;
+}
+
+/* INVITE SECTION */
+.lobby-invite-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.lobby-invite-email-btn {
+  flex: 1;
+}
+
+.lobby-copy-code-btn {
+  white-space: nowrap;
+}
+
+.lobby-btn-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+/* Invite dialog */
+.lobby-dialog-body {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lobby-dialog-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lobby-dialog-submit {
+  width: 100%;
+}
+
+/* Invite code box */
+.lobby-invite-code-box {
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+.lobby-invite-code-label {
+  font-size: 13px;
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+
+.lobby-invite-code {
+  display: block;
+  background: white;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 16px;
+}
+
+.lobby-invite-code-help {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* JOIN REQUESTS */
+.lobby-request-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: #fff7ed;
+  border-radius: 10px;
+  border: 1px solid #fed7aa;
+}
+
+.lobby-request-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lobby-request-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.lobby-player-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Badge colors for reliability */
+.lobby-request-badge {
+  font-size: 11px !important;
+  display: inline-flex;
+  align-items: center;
+}
+
+.lobby-badge-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+}
+
+.lobby-badge-green {
+  background: #22c55e !important;
+  color: white !important;
+}
+
+.lobby-badge-blue {
+  background: #3b82f6 !important;
+  color: white !important;
+}
+
+.lobby-badge-yellow {
+  background: #eab308 !important;
+  color: white !important;
+}
+
+.lobby-badge-gray {
+  background: #6b7280 !important;
+  color: white !important;
+}
+
+/* Request buttons */
+.lobby-accept-btn {
+  background: #16a34a !important;
+  color: white !important;
+}
+
+.lobby-reject-btn {
+  border-color: #f97373 !important;
+}
+
+/* TEAM ROSTER */
+.lobby-open-slots-badge {
+  background: #fef9c3 !important;
+  border-color: #facc15 !important;
+  font-size: 12px !important;
+}
+
+.lobby-player-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  background: #ecfdf3;
+  border-radius: 10px;
+  border: 1px solid #bbf7d0;
+  margin-bottom: 8px;
+}
+
+.lobby-player-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lobby-player-top-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lobby-host-badge {
+  background: #a855f7 !important;
+  color: white !important;
+}
+
+.lobby-player-tags {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.lobby-position-badge {
+  font-size: 11px !important;
+}
+
+.lobby-remove-btn {
+  color: #dc2626 !important;
+}
+
+/* Empty open slots */
+.lobby-open-slot {
+  border-radius: 10px;
+  border: 2px dashed #d1d5db;
+  padding: 14px;
+  text-align: center;
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+
+.lobby-open-slot-icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 auto 4px auto;
+}
+
+.lobby-open-slot-text {
+  font-size: 13px;
+}
+
+/* PENDING INVITES */
+.lobby-invite-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 6px;
+}
+
+.lobby-invite-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lobby-invite-status {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.lobby-invite-cancel-btn {
+  color: #374151 !important;
+}
+
+/* CHAT CARD */
+.lobby-chat-card {
+  position: sticky;
+  top: 16px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lobby-chat-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 !important;
+}
+
+/* Messages */
+.lobby-chat-messages {
+  flex: 1;
+  padding: 0 16px;
+}
+
+.lobby-chat-messages-inner {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lobby-chat-message-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lobby-chat-sender {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.lobby-chat-timestamp {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.lobby-chat-bubble {
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.lobby-chat-text {
+  font-size: 13px;
+  color: #374151;
+}
+
+/* Chat input */
+.lobby-chat-input-area {
+  border-top: 1px solid #e5e7eb;
+  padding: 12px 16px;
+}
+
+.lobby-chat-input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.lobby-chat-textarea {
+  resize: none !important;
+  flex: 1;
+}
+
+.lobby-chat-send-btn {
+  flex-shrink: 0;
+}
+
+/* CLOSE LOBBY CARD */
+.lobby-close-card {
+  margin-top: 24px;
+  border-color: #fecaca !important;
+  background: #fef2f2 !important;
+}
+
+.lobby-close-card-content {
+  padding: 20px !important;
+}
+
+.lobby-close-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.lobby-close-title {
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.lobby-close-text {
+  font-size: 13px;
+  color: #6b7280;
+}

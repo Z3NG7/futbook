@@ -1,0 +1,40 @@
+/* Switch container */
+.switch-root {
+  width: 32px;
+  height: 18px;
+  background-color: #ccc;
+  border-radius: 9999px;
+  position: relative;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* When ON */
+.switch-root[data-state="checked"] {
+  background-color: #4f46e5; /* purple primary */
+}
+
+/* Thumb */
+.switch-thumb {
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border-radius: 9999px;
+  position: absolute;
+  left: 2px;
+  transition: transform 0.2s ease;
+}
+
+/* Move thumb right when ON */
+.switch-root[data-state="checked"] .switch-thumb {
+  transform: translateX(14px);
+}
+
+/* Disabled */
+.switch-root:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,102 @@
+/* Base button styles */
+.ui-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s all ease;
+  white-space: nowrap;
+}
+
+/* Disabled */
+.ui-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ----- Variants ----- */
+
+/* Default (primary) */
+.ui-button-default {
+  background: #2563eb;
+  color: white;
+}
+.ui-button-default:hover {
+  background: #1d4ed8;
+}
+
+/* Destructive */
+.ui-button-destructive {
+  background: #dc2626;
+  color: white;
+}
+.ui-button-destructive:hover {
+  background: #b91c1c;
+}
+
+/* Outline */
+.ui-button-outline {
+  background: white;
+  border: 1px solid #ccc;
+  color: #111;
+}
+.ui-button-outline:hover {
+  background: #f5f5f5;
+}
+
+/* Secondary */
+.ui-button-secondary {
+  background: #e5e7eb;
+  color: #111;
+}
+.ui-button-secondary:hover {
+  background: #d1d5db;
+}
+
+/* Ghost (transparent) */
+.ui-button-ghost {
+  background: transparent;
+  color: #111;
+}
+.ui-button-ghost:hover {
+  background: #f3f4f6;
+}
+
+/* Link style */
+.ui-button-link {
+  background: none;
+  color: #2563eb;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ----- Sizes ----- */
+
+.ui-button-default-size {
+  padding: 8px 14px;
+  height: 36px;
+}
+
+.ui-button-sm {
+  padding: 6px 12px;
+  height: 32px;
+}
+
+.ui-button-lg {
+  padding: 10px 18px;
+  height: 42px;
+}
+
+.ui-button-icon {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: inline-flex;
+}

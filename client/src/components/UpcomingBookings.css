@@ -1,0 +1,275 @@
+/* =========================================================
+   PAGE BACKGROUND
+========================================================= */
+.bookings-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #eef6ff, #ffffff, #ebfdf5);
+  padding-bottom: 50px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+.bookings-header {
+  background: linear-gradient(to right, #2563eb, #16a34a);
+  color: white;
+  padding: 90px 0 70px;
+  text-align: left;
+}
+
+.header-back-btn {
+  color: white !important;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.header-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 16px;
+}
+
+.header-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.header-subtitle {
+  margin-left: 16px;
+  margin-top: 6px;
+  opacity: 0.85;
+}
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+.bookings-container {
+  max-width: 1100px;
+  margin: -50px auto 0;
+  padding: 0 16px;
+}
+
+/* =========================================================
+   TABS
+========================================================= */
+.tabs-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 20px;
+  background: #f3f4f6;
+  border-radius: 10px;
+}
+
+[data-state="active"] {
+  background: white;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* =========================================================
+   BOOKING CARDS
+========================================================= */
+.booking-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: box-shadow 0.25s ease;
+}
+
+.booking-card:hover:not(.past-card) {
+  box-shadow: 0 4px 18px rgba(0,0,0,0.14);
+}
+
+.booking-card-row {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .booking-card-row {
+    flex-direction: row;
+  }
+}
+
+/* Card Image */
+.booking-card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.past-card .booking-card-image img {
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .booking-card-image img {
+    width: 200px;
+    height: 100%;
+  }
+}
+
+/* Card Content */
+.booking-card-content {
+  flex: 1;
+  padding: 22px;
+}
+
+/* =========================================================
+   BOOKING HEADER AREA
+========================================================= */
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.booking-title {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.booking-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Price right side */
+.booking-price {
+  text-align: right;
+}
+
+.price-amount {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.price-hour {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* =========================================================
+   DETAILS GRID
+========================================================= */
+.booking-details {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 18px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #374151;
+  font-size: 14px;
+}
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+.booking-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* =========================================================
+   BADGES
+========================================================= */
+.badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+}
+
+.badge-green {
+  background: #16a34a;
+}
+
+.badge-yellow {
+  background: #eab308;
+}
+
+.badge-red {
+  background: #dc2626;
+}
+
+.badge-gray {
+  background: #6b7280;
+}
+
+/* =========================================================
+   ICON SIZES
+========================================================= */
+.icon-xs {
+  width: 12px;
+  height: 12px;
+}
+
+.icon-sm {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-blue {
+  color: #2563eb;
+}
+
+.icon-green {
+  color: #16a34a;
+}
+
+.icon-purple {
+  color: #7c3aed;
+}
+
+.icon-xl {
+  width: 42px;
+  height: 42px;
+  color: #d1d5db;
+}
+
+/* =========================================================
+   EMPTY STATES
+========================================================= */
+.empty-box {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.empty-icon {
+  margin-bottom: 12px;
+  opacity: 0.6;
+}
+
+/* =========================================================
+   PAST BOOKINGS STYLE
+========================================================= */
+.past-card {
+  opacity: 0.75;
+}
+
+.past-card .booking-title {
+  color: #6b7280;
+}
+
+.past-card .badge-status {
+  background: #6b7280 !important;
+}

@@ -1,0 +1,296 @@
+/* RESET — matches Tailwind base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+/* HEADER ROOT */
+.header {
+  background: linear-gradient(to right, #10b981, #0d9488);
+  padding: 24px 0 32px; /* py-6 */
+}
+
+/* ONLY THESE ELEMENTS SHOULD BE WHITE */
+.header .logo-text,
+.header .header-nav-btn,
+.header .hero-title,
+.header .hero-subtitle {
+  color: white !important;
+}
+
+/* ======================== */
+/*     CONTAINER            */
+/* ======================== */
+.header-container {
+  max-width: 1280px; /* max-w-7xl */
+  margin: auto;
+  padding: 0 16px;
+}
+
+/* ======================== */
+/*        TOPBAR            */
+/* ======================== */
+.header-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header-logo-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-emerald {
+  width: 20px;
+  height: 20px;
+  color: #10b981;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* TOPBAR BUTTONS */
+.header-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.header-nav-btn {
+  color: white !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.header-nav-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* ======================== */
+/*         HERO             */
+/* ======================== */
+.header-hero {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.hero-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #d1fae5;
+}
+
+/* ======================== */
+/*   SEARCH WRAPPER         */
+/* ======================== */
+.search-wrapper {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* SEARCH BOX */
+.search-box {
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 992px) {
+  .search-box {
+    flex-direction: row;
+  }
+}
+
+/* ======================== */
+/*     SEARCH INPUT         */
+/* ======================== */
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.search-input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  width: 20px;
+  height: 20px;
+}
+
+.search-input {
+  padding-left: 40px !important;
+  color: #111 !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+.search-input::placeholder {
+  color: #888 !important;
+}
+
+/* ======================== */
+/*       CITY SELECT        */
+/* ======================== */
+.location-select-wrapper {
+  position: relative;
+}
+
+.location-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  width: 20px;
+  height: 20px;
+}
+
+.location-select {
+  padding: 10px 34px 10px 40px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  color: #111 !important;
+  background: white !important;
+  min-width: 180px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* ======================== */
+/*      FILTER BUTTON       */
+/* ======================== */
+.filter-btn {
+  border-color: #d1d5db !important;
+  color: #444 !important;
+  padding: 10px 20px;
+}
+
+.filter-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* ======================== */
+/*      SEARCH BUTTON       */
+/* ======================== */
+.search-btn {
+  background: #10b981 !important;
+  color: white !important;
+  padding: 0 30px;
+  border: none !important;
+}
+
+/* ======================== */
+/*        FILTER PANEL      */
+/* ======================== */
+.filters-panel {
+  background: white;
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* PRICE FILTER */
+.price-filter .filter-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.price-inputs {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.price-label {
+  color: #555;
+  font-size: 14px;
+}
+
+.price-input {
+  background: white !important;
+  color: #111 !important;
+  border: 1px solid #d1d5db !important;
+  padding: 8px 10px !important;
+  border-radius: 6px;
+  width: 110px;
+}
+
+.price-input::placeholder {
+  color: #aaa !important;
+}
+
+.apply-price-btn {
+  background: #10b981 !important;
+  color: white !important;
+  padding: 8px 16px;
+}
+
+/* ======================== */
+/*       QUICK STATS        */
+/* ======================== */
+.quick-stats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 32px;
+  color: #d1fae5;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 14px;
+}

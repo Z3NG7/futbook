@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airbnb Clone</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <!-- Logo -->
+        <div class="logo">
+          <svg width="102" height="32" viewBox="0 0 102 32" fill="currentColor">
+            <path d="M51.5 15.5c0 5.8-4.7 10.5-10.5 10.5S30.5 21.3 30.5 15.5 35.2 5 41 5s10.5 4.7 10.5 10.5zm-2 0c0-4.7-3.8-8.5-8.5-8.5s-8.5 3.8-8.5 8.5 3.8 8.5 8.5 8.5 8.5-3.8 8.5-8.5z"/>
+            <path d="M29.5 15.5c0-6.9-5.6-12.5-12.5-12.5S4.5 8.6 4.5 15.5 10.1 28 17 28s12.5-5.6 12.5-12.5zm-2 0c0 5.8-4.7 10.5-10.5 10.5S6.5 21.3 6.5 15.5 11.2 5 17 5s10.5 4.7 10.5 10.5z"/>
+          </svg>
+          <span class="logo-text">airbnb</span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav">
+          <a href="#" class="nav-link active">
+            <span class="nav-icon">🏠</span>
+            Homes
+          </a>
+          <a href="#" class="nav-link">
+            <span class="nav-icon">🎈</span>
+            Experiences
+            <span class="badge">NEW</span>
+          </a>
+          <a href="#" class="nav-link">
+            <span class="nav-icon">🍳</span>
+            Services
+            <span class="badge">NEW</span>
+          </a>
+        </nav>
+
+        <!-- Right Menu -->
+        <div class="header-right">
+          <a href="#" class="host-link">Become a host</a>
+          <button class="icon-btn">🌐</button>
+          <button class="icon-btn menu-btn">☰</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="search-section">
+    <div class="container">
+      <div class="search-bar">
+        <div class="search-item">
+          <label>Where</label>
+          <input type="text" placeholder="Search destinations">
+        </div>
+        <div class="search-divider"></div>
+        <div class="search-item">
+          <label>When</label>
+          <input type="text" placeholder="Add dates">
+        </div>
+        <div class="search-divider"></div>
+        <div class="search-item">
+          <label>Who</label>
+          <input type="text" placeholder="Add guests">
+        </div>
+        <button class="search-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="white">
+            <path d="M11.5 7a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM15 14l-3.5-3.5"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      <!-- Seoul Section -->
+      <section class="listings-section">
+        <div class="section-header">
+          <h2>Popular homes in Seoul</h2>
+          <div class="nav-arrows">
+            <button class="arrow-btn">‹</button>
+            <button class="arrow-btn">›</button>
+          </div>
+        </div>
+        
+        <div class="listings-grid">
+          <div class="listing-card">
+            <div class="card-image">
+              <img src="/placeholder.svg?height=300&width=400" alt="Room in Seoul">
+              <span class="favorite-badge">Guest favorite</span>
+              <button class="favorite-btn">♡</button>
+            </div>
+            <div class="card-content">
+              <h3>Room in Seoul</h3>
+              <p class="price"><strong>$56</strong> for 2 nights ★ 4.88</p>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="card-image">
+              <img src="/placeholder.svg?height=300&width=400" alt="Guesthouse in Seoul">
+              <span class="favorite-badge">Guest favorite</span>
+              <button class="favorite-btn">♡</button>
+            </div>
+            <div class="card-content">
+              <h3>Guesthouse in Seoul</h3>
+              <p class="price"><strong>$75</strong> for 2 nights ★ 4.95</p>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="card-image">
+              <img src="/placeholder.svg?height=300&width=400" alt="Room in Mapo-gu">
+              <span class="favorite-badge">Guest favorite</span>
+              <button class="favorite-btn">♡</button>
+            </div>
+            <div class="card-content">
+              <h3>Room in Mapo-gu</h3>
+              <p class="price"><strong>$62</strong> for 2 nights ★ 4.84</p>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="card-image">
+              <img src="/placeholder.svg?height=300&width=400" alt="Room in 종로구">
+              <span class="favorite-badge">Guest favorite</span>
+              <button class="favorite-btn">♡</button>
+            </div>
+            <div class="card-content">
+              <h3>Room in 종로구</h3>
+              <p class="price"><strong>$184</strong> for 2 nights ★ 4.94</p>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="card-image">
+              <img src="/placeholder.svg?height=300&width=400" alt="Room in 종로구">
+              <span class="favorite-badge">Guest favorite</span>
+              <button class="favorite-btn">♡</button>
+            </div>
+            <div class="card-content">
+              <h3>Room in 종로구</h3>
+              <p class="price"><strong>$200</strong> for 2 nights ★ 4.92</p>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="card-image">
+              <img src="/placeholder.svg?height=300&width=400" alt="Room in Jongno-gu">
+              <span class="favorite-badge">Guest favorite</span>
+              <button class="favorite-btn">♡</button>
+            </div>
+            <div class="card-content">
+              <h3>Room in Jongno-gu</h3>
+              <p class="price"><strong>$148</strong> for 2 nights ★ 4.95</p>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="card-image">
+              <img src="/placeholder.svg?height=300&width=400" alt="Guesthouse in Seoul">
+              <span class="favorite-badge">Guest favorite</span>
+              <button class="favorite-btn">♡</button>
+            </div>
+            <div class="card-content">
+              <h3>Guesthouse in Seoul</h3>
+              <p class="price"><strong>$96</strong> for 2 nights ★ 4.94</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tokyo Section -->
+      <section class="listings-section">
+        <div class="section-header">
+          <h2>Available next month in Tokyo</h2>
+          <div class="nav-arrows">
+            <button class="arrow-btn">‹</button>
+            <button class="arrow-btn">›</button>
+          </div>
+        </div>
+        
+        <div class="listings-grid">
+          <div class="listing-card">
+            <div class="card-image">
+              <img src="/placeholder.svg?height=300&width=400" alt="Traditional house">
+              <span class="favorite-badge">Guest favorite</span>
+              <button class="favorite-btn">♡</button>
+            </div>
+            <div class="card-content">
+              <h3>Home in Tokyo</h3>
+              <p class="price"><strong>$120</strong> for 2 nights ★ 4.87</p>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="card-image">
+              <img src="/placeholder.svg?height=300&width=400" alt="Japanese room">
+              <span class="favorite-badge">Guest favorite</span>
+              <button class="favorite-btn">♡</button>
+            </div>
+            <div class="card-content">
+              <h3>Room in Tokyo</h3>
+              <p class="price"><strong>$89</strong> for 2 nights ★ 4.91</p>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="card-image">
+              <img src="/placeholder.svg?height=300&width=400" alt="Apartment">
+              <span class="favorite-badge">Guest favorite</span>
+              <button class="favorite-btn">♡</button>
+            </div>
+            <div class="card-content">
+              <h3>Apartment in Tokyo</h3>
+              <p class="price"><strong>$105</strong> for 2 nights ★ 4.88</p>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="card-image">
+              <img src="/placeholder.svg?height=300&width=400" alt="Room">
+              <span class="favorite-badge">Guest favorite</span>
+              <button class="favorite-btn">♡</button>
+              <span class="price-badge">Prices include all fees</span>
+            </div>
+            <div class="card-content">
+              <h3>Room in Shibuya</h3>
+              <p class="price"><strong>$95</strong> for 2 nights ★ 4.93</p>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="card-image">
+              <img src="/placeholder.svg?height=300&width=400" alt="Studio">
+              <span class="favorite-badge">Guest favorite</span>
+              <button class="favorite-btn">♡</button>
+            </div>
+            <div class="card-content">
+              <h3>Studio in Tokyo</h3>
+              <p class="price"><strong>$78</strong> for 2 nights ★ 4.89</p>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="card-image">
+              <img src="/placeholder.svg?height=300&width=400" alt="Traditional home">
+              <span class="favorite-badge">Guest favorite</span>
+              <button class="favorite-btn">♡</button>
+            </div>
+            <div class="card-content">
+              <h3>Home in Kyoto</h3>
+              <p class="price"><strong>$145</strong> for 2 nights ★ 4.96</p>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="card-image">
+              <img src="/placeholder.svg?height=300&width=400" alt="Apartment">
+              <span class="favorite-badge">Guest favorite</span>
+              <button class="favorite-btn">♡</button>
+            </div>
+            <div class="card-content">
+              <h3>Apartment in Tokyo</h3>
+              <p class="price"><strong>$112</strong> for 2 nights ★ 4.90</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

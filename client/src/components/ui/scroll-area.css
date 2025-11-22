@@ -1,0 +1,46 @@
+/* The main scroll area container */
+.scroll-area-root {
+  position: relative;
+  overflow: hidden;
+}
+
+/* The scrollable viewport */
+.scroll-area-viewport {
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+/* Scrollbar */
+.scroll-area-scrollbar {
+  display: flex;
+  touch-action: none;
+  padding: 2px;
+  user-select: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.scroll-area-scrollbar[data-orientation="vertical"] {
+  width: 10px;
+  height: 100%;
+  border-left: 1px solid transparent;
+}
+
+.scroll-area-scrollbar[data-orientation="horizontal"] {
+  height: 10px;
+  width: 100%;
+  flex-direction: column;
+  border-top: 1px solid transparent;
+}
+
+/* Scroll thumb */
+.scroll-area-thumb {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 999px;
+  position: relative;
+}
+
+.scroll-area-thumb:hover {
+  background: rgba(0, 0, 0, 0.35);
+}

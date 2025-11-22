@@ -1,0 +1,301 @@
+/* CONTAINER */
+.venue-detail-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  margin-bottom: 16px;
+  color: #4b5563;
+}
+
+/* GRID */
+.venue-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .venue-detail-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* IMAGE */
+.venue-image-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.venue-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.venue-sport-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.badge-green {
+  background: #059669 !important;
+  border: none;
+  color: white !important;
+}
+
+/* INFO CARD */
+.venue-info-card {
+  padding: 0;
+}
+
+.venue-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.venue-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.venue-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.venue-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.star-icon {
+  fill: #fbbf24;
+  color: #fbbf24;
+}
+
+.rating-value {
+  font-weight: 600;
+}
+
+.rating-subtext {
+  color: #6b7280;
+}
+
+.venue-price-block {
+  text-align: right;
+}
+
+.venue-price {
+  font-size: 26px;
+  font-weight: bold;
+  color: #059669;
+}
+
+.price-sub {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* DESCRIPTION */
+.venue-description {
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+/* STATS GRID */
+.venue-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.venue-stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.gray-icon {
+  color: #6b7280;
+}
+
+/* AMENITIES */
+.section-title {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.amenity-icon {
+  color: #059669;
+}
+
+/* BOOKING PANEL */
+.booking-card {}
+
+.booking-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.booking-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* FORM ELEMENTS */
+.label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* TURFS */
+.turf-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.turf-item {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+
+.turf-item:hover {
+  border-color: #10b981;
+}
+
+.turf-selected {
+  background: #ecfdf5;
+  border-color: #10b981;
+}
+
+.turf-name {
+  font-weight: 600;
+}
+
+.turf-type {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.turf-price {
+  color: #059669;
+  font-weight: 600;
+}
+
+/* TIME SLOTS */
+.timeslot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.timeslot-btn {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.timeslot-btn:hover:not(.slot-booked) {
+  border-color: #10b981;
+  background: #ecfdf5;
+}
+
+.slot-selected {
+  background: #ecfdf5;
+  border-color: #10b981;
+  color: #065f46;
+}
+
+.slot-booked {
+  background: #f3f4f6;
+  border-color: #e5e7eb;
+  color: #9ca3af;
+}
+
+.slot-booked-text {
+  font-size: 11px;
+  display: block;
+}
+
+/* SUMMARY */
+.summary-box {
+  background: #ecfdf5;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.summary-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.total-row {
+  font-weight: 600;
+}
+
+.total-price {
+  color: #059669;
+}
+
+/* BOOK BUTTON */
+.confirm-btn {
+  background: #059669 !important;
+  color: #fff !important;
+  border: none;
+}
+
+.confirm-btn:disabled {
+  background: #d1d5db !important;
+}

@@ -1,0 +1,190 @@
+/* MAIN PAGE */
+.loyalty-page {
+  background: #fff7e6;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+/* GLOBAL CONTAINER */
+.loyalty-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+/* HEADER */
+.loyalty-header {
+  background: linear-gradient(to right, #ff7a1a, #ff3b3b);
+  color: white;
+  padding: 80px 0 120px;
+}
+
+/* TOP BAR */
+.loyalty-back {
+  color: white !important;
+  margin-bottom: 20px;
+}
+
+.loyalty-header-top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .loyalty-header-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.loyalty-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-lg {
+  width: 32px;
+  height: 32px;
+}
+
+.loyalty-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.loyalty-subtitle {
+  opacity: 0.85;
+}
+
+/* POINTS CARD */
+.loyalty-points-card {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.points-value {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.points-label {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* MAIN */
+.loyalty-main {
+  margin-top: -80px;
+}
+
+/* TIERS */
+.tier-card {
+  margin-bottom: 30px;
+}
+
+.tier-grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .tier-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tier-box {
+  padding: 20px;
+  border: 2px solid #ddd;
+  text-align: center;
+  border-radius: 12px;
+  background: white;
+}
+
+.tier-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.tier-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.tier-range {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* TAB LIST */
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 20px;
+}
+
+/* DEALS GRID */
+.deals-grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .deals-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.deal-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.deal-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* HISTORY */
+.history-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.history-card {
+  background: #f0fff0;
+  padding: 12px;
+}
+
+.history-title {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.history-amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+}
+
+/* REWARDS */
+.rewards-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.reward-card {
+  background: #fafafa;
+  padding: 16px;
+}
+
+.reward-date {
+  font-size: 13px;
+  opacity: 0.7;
+}

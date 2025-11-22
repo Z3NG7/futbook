@@ -1,0 +1,52 @@
+/* Tabs container */
+.tabs-root {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Tabs List */
+.tabs-list {
+  display: inline-flex;
+  align-items: center;
+  background: #f1f1f1;       /* muted */
+  color: #666;               /* muted-foreground */
+  padding: 3px;
+  height: 36px;
+  border-radius: 12px;
+}
+
+/* Each tab button */
+.tabs-trigger {
+  flex: 1;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 4px 8px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.tabs-trigger:hover {
+  background: #e7e7e7;
+}
+
+/* When a tab is active */
+.tabs-trigger[data-state="active"] {
+  background: white;
+  color: black;
+  border-color: #ddd;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Disabled state */
+.tabs-trigger:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Content area */
+.tabs-content {
+  outline: none;
+}
