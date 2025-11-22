@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streaming Video</title>
+</head>
+<body>
+  <h1>Live Streaming Video</h1>
+
+  <!-- Video player -->
+  <video id="video" width="640" height="360" controls></video>
+
+  <!-- HLS.js script -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script>
+    const video = document.getElementById('video');
+    const videoUrl = 'https://livemedia.dishhomego.com.np/hls/live/2121808/npl4/master.m3u8?hdnea=exp=1763552340~acl=/*~hmac=e311da5907c86713fcc5d997b38644298caec8bd0fa6da16670143f4f36cb457';
+
+    if (Hls.isSupported()) {
+      // If HLS.js is supported, initialize it and attach it to the video element
+      const hls = new Hls();
+      hls.loadSource(videoUrl);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, function () {
+        video.play();
+      });
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      // If the browser supports HLS natively (e.g., Safari), directly play the video
+      video.src = videoUrl;
+      video.addEventListener('loadedmetadata', function () {
+        video.play();
+      });
+    }
+  </script>
+</body>
+</html>
